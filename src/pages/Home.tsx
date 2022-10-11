@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "./redux/hooks";
-import { getPopularMoviesList } from "./redux/actions";
+import { useAppDispatch, useAppSelector } from "../redux/hooks";
+import { getPopularMoviesList } from "../redux/actions";
 
-import { setCurrentPage } from "./redux/slice";
+import { setCurrentPage } from "../redux/slice";
 import { Button, List } from "antd";
-import Container from './components/Container';
-import MovieCard from './components/movieCard';
+import Container from '../components/Container';
+import MovieCard from '../components/MovieCard';
 
 function App() {
   const dispatch = useAppDispatch();

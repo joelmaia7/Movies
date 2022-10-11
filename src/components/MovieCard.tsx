@@ -9,9 +9,9 @@ interface IProps {
 
 export default function MovieCard({ data } : IProps) {
     return (
-        <div>
+        <a href={`/movie/${data.id}`}>
             <Poster src={imageBaseURL + 'w220_and_h330_face' + data.poster_path}></Poster>
-        </div>
+        </a>
     );
 }
 
