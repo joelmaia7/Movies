@@ -1,8 +1,15 @@
-import { configureStore } from '@reduxjs/toolkit'
-import { moviesSlice } from './slice';
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
+
+import MoviesListReducer from './MoviesList/MoviesList.slice';
+import MovieDetailsReducer from './MovieDetails/MovieDetails.slice';
+
+export const appReducer = combineReducers({
+  moviesList: MoviesListReducer,
+  movieDetails: MovieDetailsReducer,
+});
 
 const store = configureStore({
-  reducer: moviesSlice.reducer,
+  reducer: appReducer,
 });
 
 export type RootState = ReturnType<typeof store.getState>
