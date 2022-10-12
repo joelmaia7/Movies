@@ -18,7 +18,7 @@ Runs the app in the development mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder using the endpoints defined in `src/config/production.json`.
+Builds the app for production to the `build` folder.
 
 ### `npm run preview`
 
